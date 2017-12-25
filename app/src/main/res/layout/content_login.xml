@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="loc.twitter.twitterlocapp.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <ImageButton
+        android:id="@+id/loginButton"
+        android:layout_width="168dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="8dp"
+        android:onClick="loginClick"
+        android:src="@drawable/sign_in_with_twitter_gray"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="272dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/authPinInfo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/authorizebutton"
+        app:layout_constraintEnd_toEndOf="@+id/authPinEditText"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="@+id/authPinText" />
+
+    <TextView
+        android:id="@+id/authPinText"
+        android:layout_width="93dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/authPin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/authorizebutton"
+        app:layout_constraintStart_toStartOf="@+id/authorizebutton" />
+
+    <EditText
+        android:id="@+id/authPinEditText"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/authorizebutton"
+        app:layout_constraintEnd_toEndOf="@+id/authorizebutton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/authPinText" />
+
+    <Button
+        android:id="@+id/authorizebutton"
+        android:layout_width="279dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="236dp"
+        android:onClick="authorizeClick"
+        android:text="@string/authPinButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <TextView
+        android:id="@+id/infoTextLogin"
+        android:layout_width="279dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/authorizebutton"
+        app:layout_constraintStart_toStartOf="@+id/authorizebutton"
+        app:layout_constraintTop_toBottomOf="@+id/authorizebutton" />
+
+</android.support.constraint.ConstraintLayout>

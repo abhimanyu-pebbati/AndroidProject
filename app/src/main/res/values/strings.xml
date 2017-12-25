@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Twitter App</string>
+    <string name="authPin">Authentication PIN</string>
+    <string name="authPinInfo">Once you login to your Twitter account and grant access to the app, you will receive an Authorization PIN. Enter the PIN and hit \'Authorize PIN\' button.</string>
+    <string name="authPinButton">Authorize PIN</string>
+
+    <string name="search_for_hashtag">Search for:</string>
+    <string name="search_radius">Search radius around you in kilometers (Enter 0 to ignore location for search):</string>
+    <string name="search">Search</string>
+    <string name="title_activity_list_pictures">Search Results</string>
+</resources>
